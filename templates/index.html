@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Marven Stark Bookshop</title>
+        <!-- <style>
+            body {
+                background-image: url('../static/open_book.png')
+            }
+        </style> -->
+    </head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    
+    <body> 
+        <h1>Orders List</h1>
+        {% for item in orders %}
+        <h2>Customer: {{item.customer_name}}</h2>
+        <h3>Order date: {{item.order_date}}</h3>
+        <h3>Book: {{item.book_title}}</h3>
+        <h3>Quantity: {{item.quantity}}</h3>
+        <h3>Description: {{item.description}}</h3>
+        <a href="/orders/{{loop.index}}">link</a>
+        {% endfor %}
+    </body>
+
+</html>

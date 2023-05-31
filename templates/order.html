@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Order</title>
+    </head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <body>
+        <h2>Customer: {{order.customer_name}}</h2>
+        <h3>Order date: {{order.order_date}}</h3>
+        <h3>Book: {{order.book_title}}</h3>
+        <h3>Quantity: {{order.quantity}}</h3>
+        <h3>Description: {{order.description}}</h3>
+    </body>
+</html>

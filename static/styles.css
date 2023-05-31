@@ -1,0 +1,9 @@
+body {
+
+    background-image: url("../static/open_book.png");
+    text-align: left;
+    margin-top: 3%;
+    margin-left: 64%;
+    font-family:cursive;
+    line-height: 25px;
+}
