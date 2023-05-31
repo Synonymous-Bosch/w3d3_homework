@@ -1,7 +1,11 @@
 body {
 
     background-image: url("../static/open_book.png");
-    text-align: left;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color:rgb(34, 47, 69);
+    text-align:left;
     margin-top: 3%;
     margin-left: 64%;
     font-family:cursive;
